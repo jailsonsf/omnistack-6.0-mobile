@@ -6,7 +6,7 @@ import Box from './pages/Box';
 const Routes = createAppContainer(
     createSwitchNavigator({
         Main,
-        Box
+        Box,
     })
 );
 
