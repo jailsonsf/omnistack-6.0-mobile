@@ -33,9 +33,9 @@ export default class Box extends Component {
   handleUpload = () => {
     ImagePicker.launchImageLibrary({}, async upload => {
       if (upload.error) {
-        return
+        console.log('Erro')
       } else if (upload.didCancel) {
-        return
+        console.log('Envio cancelado')
       } else {
         const data = new FormData();
 
